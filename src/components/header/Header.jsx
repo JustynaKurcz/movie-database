@@ -5,6 +5,9 @@ import LoginButton from './LoginButton'
 function Header() {
 	return (
 		<header className='header'>
+			<div>
+				<img src='movie.png' alt='Movie Logo' className='logo' />
+			</div>
 			<div className='right-corner'>
 				<LoginButton />
 			</div>
