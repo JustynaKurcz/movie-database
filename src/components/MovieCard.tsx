@@ -1,9 +1,7 @@
-import React from 'react'
 import '../styles/movieCard.css'
+import { Movie } from '../types/Movie'
 
-function MovieCard(props) {
-	const { title, rating, image, description } = props.film
-
+function MovieCard({ title, rating, image, description }: Movie) {
 	return (
 		<div className='movie-card'>
 			<img className='movie-card-image' src={image} alt='Image movie' />
