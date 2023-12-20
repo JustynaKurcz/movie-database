@@ -1,8 +1,8 @@
 import React from 'react'
 import {Routes, Route, BrowserRouter} from 'react-router-dom'
 import HomePage from './pages/HomePage'
-import LoginPage from './pages/Login/LoginPage'
-import RegisterPage from './pages/Register/RegisterPage'
+import LoginPage from './pages/LoginPage/LoginPage'
+import RegisterPage from './pages/RegisterPage/RegisterPage'
 import MovieDetailsPage from "./pages/MovieDetails/MovieDetailsPage";
 import AddMoviePage from "./pages/AddMovie/AddMoviePage";
 
