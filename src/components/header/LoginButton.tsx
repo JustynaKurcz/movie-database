@@ -1,7 +1,19 @@
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../../styles/header/loginButton.css'
 
 function LoginButton() {
-	return <button className='login-button'>Zaloguj się</button>
+	const navigate = useNavigate()
+
+	const handleLoginClick = () => {
+		navigate('/signin')
+	}
+
+	return (
+		<button className='login-button' onClick={handleLoginClick}>
+			Zaloguj się
+		</button>
+	)
 }
 
 export default LoginButton
