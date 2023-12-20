@@ -1,0 +1,50 @@
+/* MovieDetails.module.css */
+
+.movieDetailsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.movieDetails {
+    display: flex;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.movieDetailsImage {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.movieDetailsInfo {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.movieDetails h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: black;
+}
+
+.movieDetails p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.movieDetails strong {
+    font-weight: bold;
+    margin-right: 8px;
+}
