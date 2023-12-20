@@ -1,6 +1,8 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import MovieCard from './MovieCard'
-import '../styles/movieList.css'
-import { movieRecords } from '../movieRecords'
+import '../../styles/movieList.css'
+import { movieRecords } from '../../movieRecords'
 
 const MovieList = () => {
 	return (
