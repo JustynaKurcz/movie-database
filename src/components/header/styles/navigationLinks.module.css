@@ -1,0 +1,22 @@
+.linkContainer {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.link {
+    display: block;
+    line-height: 1;
+    padding: 8px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.link:hover {
+    background-color: lightgrey;
+}
+

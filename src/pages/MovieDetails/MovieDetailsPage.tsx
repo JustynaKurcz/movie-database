@@ -4,6 +4,7 @@ import {movieRecords} from '../../movieRecords';
 import styles from './MovieDetailsPage.module.css';
 import MovieDetails from '../../components/movieDetails/MovieDetails';
 import Header from '../../components/header/Header';
+import Footer from "../../components/footer/Footer";
 
 const MovieDetailsPage: React.FC = () => {
     const {title} = useParams<{ title: string }>();
@@ -19,6 +20,7 @@ const MovieDetailsPage: React.FC = () => {
                     <p> Movie not found </p>
                 )}
             </div>
+            <Footer/>
         </div>
     );
 };

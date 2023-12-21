@@ -2,6 +2,7 @@ import React from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import styles from './RegisterPage.module.css'
 import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 
 const LoginPage: React.FC = () => {
     const navigate = useNavigate()
@@ -39,6 +40,7 @@ const LoginPage: React.FC = () => {
                     </p>
                 </form>
             </div>
+            <Footer/>
         </div>
     )
 }

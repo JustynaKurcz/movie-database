@@ -1,8 +1,8 @@
 import React from 'react'
 import Header from '../components/header/Header'
-import SearchBar from '../components/SearchBar'
+import SearchBar from '../components/searchBar/SearchBar'
 import MovieList from '../components/movieList/MovieList'
-import Footer from '../components/Footer'
+import Footer from '../components/footer/Footer'
 import '../App.css'
 
 const HomePage: React.FC = () => {

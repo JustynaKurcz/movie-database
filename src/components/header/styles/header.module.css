@@ -15,11 +15,6 @@
     background-color: white;
     border-bottom: 1px solid lightgrey;
 }
-.linkContainer {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
 .inner {
     height: 56px;
     display: flex;
@@ -27,18 +22,3 @@
     align-items: center;
 }
 
-.link {
-    display: block;
-    line-height: 1;
-    padding: 8px 12px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
-
-}
-
-.link:hover {
-    background-color: lightgrey;
-}

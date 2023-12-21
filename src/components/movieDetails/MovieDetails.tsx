@@ -1,11 +1,7 @@
 import React from 'react';
-import { Movie } from '../../types/Movie';
-import styles from '../../styles/movieDetails/movieDetails.module.css';
-import {movieRecords} from '../../movieRecords'
+import styles from './styles/movieDetails.module.css';
+import {MovieDetailsProps} from "./types/MovieDetailsProps";
 
-interface MovieDetailsProps {
-    movie: Movie;
-}
 
 const MovieDetails: React.FC<MovieDetailsProps> = ({ movie }) => {
     return (

@@ -1,16 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../../styles/movieCard.css'
-import { Movie } from '../../types/Movie'
+import styles from './styles/movieCard.module.css'
+import { Movie } from './types/Movie'
 
 function MovieCard({ title, rating, image, description }: Movie) {
 	return (
-		<div className='movie-card'>
-			<img className='movie-card-image' src={image} alt={`Poster for ${title}`} />
-			<div className='movie-card-info'>
-				<span className='movie-card-title'>Tytuł : {title}</span>
-				<p className='movie-card-rating'>Ocena: {rating}</p>
-				<p className='movie-card-description'>Opis: {description}</p>
+		<div className={styles.movieCard}>
+			<img className={styles.movieCardImage} src={image} alt={`Poster for ${title}`} />
+			<div className={styles.movieCardInfo}>
+				<span className={styles.movieCardTitle}>Tytuł : {title}</span>
+				<p className={styles.movieCardRating}>Ocena: {rating}</p>
+				<p className={styles.movieCardDescription}>Opis: {description}</p>
 			</div>
 		</div>
 	)

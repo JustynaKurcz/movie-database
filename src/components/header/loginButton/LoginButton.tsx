@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import '../../styles/header/loginButton.css'
+import './styles/loginButton.css'
 
 function LoginButton() {
 	const navigate = useNavigate()
