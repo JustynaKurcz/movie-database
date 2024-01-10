@@ -4,7 +4,7 @@ import styles from './RegisterPage.module.css'
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 
-const LoginPage: React.FC = () => {
+const RegisterPage: React.FC = () => {
     const navigate = useNavigate()
 
     const handleLogin = () => {
@@ -14,7 +14,7 @@ const LoginPage: React.FC = () => {
     return (
         <div className='app-container'>
             <Header/>
-            <div className={styles.loginContainer}>
+            <div className={styles.registerContainer}>
                 <form className={styles.form}>
                     <p className={styles.formTitle}>Zarejestruj się</p>
                     <div className={styles.inputContainer}>
@@ -45,4 +45,4 @@ const LoginPage: React.FC = () => {
     )
 }
 
-export default LoginPage
+export default RegisterPage
