@@ -1,16 +1,16 @@
-import { CopyrightOutlined } from '@ant-design/icons'
+import {CopyrightOutlined} from '@ant-design/icons'
 import styles from './styles/footer.module.css'
 import React, {memo} from "react";
 
 const Footer: React.FC = memo(() => {
-	return (
-		<footer>
+    return (
+        <footer>
 			<span className={styles.footerText}>
-				<CopyrightOutlined />
-				Justyna Kurcz | {new Date().getFullYear()}
+				<CopyrightOutlined/>
+				   Justyna Kurcz | {new Date().getFullYear()}
 			</span>
-		</footer>
-	)
+        </footer>
+    )
 });
 
 export default Footer;

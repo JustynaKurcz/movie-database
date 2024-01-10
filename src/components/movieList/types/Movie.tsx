@@ -3,5 +3,5 @@ export interface Movie {
     title: string;
     rating: number;
     image: string;
-    description: string;
+    content: string;
 }

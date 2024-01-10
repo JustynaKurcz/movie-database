@@ -1,8 +1,7 @@
-import { Movie } from './components/movieList/types/Movie'
 
 const IMAGE_PATH = 'https://as1.ftcdn.net/v2/jpg/05/41/54/58/1000_F_541545884_WfXSQu4WmxLwuPcEDYr3mASdUtZGvVOk.jpg'
 
-export const movieRecords: Movie[] = [
+export const movieRecords = [
 	{
 		id: '1',
 		title: 'Incepcja',

@@ -10,7 +10,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({ movie }) => {
             <div className={styles.movieDetailsInfo}>
                 <h2>{movie.title}</h2>
                 <p><strong>Ocena:</strong> {movie.rating}</p>
-                <p><strong>Opis:</strong> {movie.description}</p>
+                <p><strong>Opis:</strong> {movie.content}</p>
             </div>
         </div>
     );
