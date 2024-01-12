@@ -1,30 +1,51 @@
-import React from 'react'
-import {Link, useNavigate} from 'react-router-dom'
+import React, {FormEvent, useState} from 'react'
+import {Link} from 'react-router-dom'
 import styles from './LoginPage.module.css'
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
+import useSignInForm from "./hooks/useSignInForm";
+import {TSignInForm} from "./types/SignInForm";
 
 const LoginPage: React.FC = () => {
-    const navigate = useNavigate()
+    const {handleSubmit} = useSignInForm();
+    const [formData, setFormData] = useState<TSignInForm>({
+        login: '',
+        password: ''
+    });
 
-    const handleLogin = () => {
-        navigate('/signin')
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        })
     }
+
+    const handleFormSubmit = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        handleSubmit(formData);
+    };
 
     return (
         <div className='app-container'>
-            <Header/>
             <div className={styles.loginContainer}>
-                <form className={styles.form}>
+                <form className={styles.form} onSubmit={handleFormSubmit}>
                     <p className={styles.formTitle}>Zaloguj się na swoje konto</p>
                     <div className={styles.inputContainer}>
-                        <input type='email' placeholder='Email'/>
+                        <input type='email'
+                               placeholder='Email'
+                               name='login'
+                               value={formData.login}
+                               onChange={handleInputChange}
+                        />
                         <span></span>
                     </div>
                     <div className={styles.inputContainer}>
-                        <input type='password' placeholder='Hasło'/>
+                        <input type='password'
+                               placeholder='Hasło'
+                               name='password'
+                               value={formData.password}
+                               onChange={handleInputChange}
+                        />
                     </div>
-                    <button type='submit' className={styles.submit} onClick={handleLogin}>
+                    <button type='submit' className={styles.submit}>
                         Zaloguj się
                     </button>
                     <p className={styles.signupLink}>
@@ -32,7 +53,6 @@ const LoginPage: React.FC = () => {
                     </p>
                 </form>
             </div>
-            <Footer/>
         </div>
     )
 }

@@ -1,7 +1,9 @@
+import {UUID} from "node:crypto";
+
 export interface Movie {
-    id: string;
+    id: UUID;
     title: string;
-    rating: number;
+    rate: number;
     image: string;
     content: string;
 }

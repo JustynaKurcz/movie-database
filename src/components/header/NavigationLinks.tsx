@@ -13,7 +13,10 @@ const NavigationLinks = () => {
                 <Link
                     key={link.label}
                     to={link.link}
-                    className={`${styles.link} ${location.pathname === link.link ? styles.active : ''}`}
+                    className={`${styles.link} ${
+                        location.pathname === link.link ? styles.active : ''
+                    }`}
+                    onClick={link.onClick}
                 >
                     {link.label}
                 </Link>

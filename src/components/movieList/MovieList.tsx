@@ -4,7 +4,6 @@ import MovieCard from './MovieCard'
 import styles from './styles/movieList.module.css'
 import axios from "axios";
 import { Movie } from "./types/Movie";
-// import {movieRecords} from '../../movieRecords'
 
 const MovieList = () => {
     const [movies, setMovies] = useState<Movie[]>([]);
