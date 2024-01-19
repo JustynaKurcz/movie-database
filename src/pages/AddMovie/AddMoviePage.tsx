@@ -29,33 +29,33 @@ const AddMoviePage: React.FC = () => {
                 <form className={styles.form} onSubmit={handleSubmit}>
                     <input
                         type='text'
-                        placeholder='Title'
+                        placeholder='Tytuł'
                         name='title'
                         value={formData.title}
                         onChange={handleInputChange}
                     />
                     <input
                         type='text'
-                        placeholder='Content'
+                        placeholder='Opis'
                         name='content'
                         value={formData.content}
                         onChange={handleInputChange}
                     ></input>
                     <input
                         type='text'
-                        placeholder='Rate'
+                        placeholder='Ocena'
                         name='rate'
                         value={formData.rate}
                         onChange={handleInputChange}
                     ></input>
                     <input
                         type='text'
-                        placeholder='Image URL'
+                        placeholder='Obraz'
                         name='image'
                         value={formData.image}
                         onChange={handleInputChange}
                     />
-                    <button type='submit'>Add Movie</button>
+                    <button type='submit'>Dodaj film</button>
                 </form>
             </div>
         </div>
