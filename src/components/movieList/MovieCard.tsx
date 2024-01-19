@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './styles/movieCard.module.css'
 import { Movie } from './types/Movie'
 
+
 function MovieCard({ title, rate, image, content }: Movie) {
 	return (
 		<div className={styles.movieCard}>

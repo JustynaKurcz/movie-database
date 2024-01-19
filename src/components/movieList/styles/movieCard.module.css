@@ -1,7 +1,7 @@
 .movieCard {
 	width: 90%;
 	height: 300px;
-	margin: 30px;
+	margin: 30px auto;
 	background-color: #c7b198;
 	border: 2px solid black;
 	border-radius: 5px;

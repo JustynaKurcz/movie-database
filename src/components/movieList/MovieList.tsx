@@ -27,9 +27,11 @@ const MovieList: React.FC<MovieListProps> = ({ searchTerm }) => {
         <div className={styles.movieList}>
             {filteredFilms.length > 0 ? (
                 filteredFilms.map((film) => (
-                    <Link to={`/details/${film.id}`} key={film.id} style={{textDecoration: 'none'}}>
-                        <MovieCard {...film} />
-                    </Link>
+                    <div key={film.id}>
+                        <Link to={`/details/${film.id}`} style={{textDecoration: 'none'}}>
+                            <MovieCard {...film} />
+                        </Link>
+                    </div>
                 ))
             ) : (
                 <p className={styles.emptyList}>Brak dostępnych filmów.</p>

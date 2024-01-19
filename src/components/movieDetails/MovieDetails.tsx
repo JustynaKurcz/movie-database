@@ -8,7 +8,7 @@ import {UUID} from "node:crypto";
 const MovieDetails: React.FC<MovieDetailsProps> = ({movie}) => {
     const token = localStorage.getItem('token');
     const decodedToken: any = token ? jwtDecode<JwtPayload>(token) : null;
-    const isAdmin = useState<boolean>(decodedToken ? decodedToken.isAdmin : false);
+    const isAdmin = decodedToken ? decodedToken.isAdmin : false;
 
     const handleDeleteMovie = async (movieId: UUID) => {
         await axios.delete(`https://at.usermd.net/api/movie/${movieId}`,{
