@@ -1,6 +1,6 @@
 import React, {FormEvent, useState} from 'react'
 import {Link} from 'react-router-dom'
-import styles from './LoginPage.module.css'
+import styles from '../shared/styles/auth.module.css'
 import useSignInForm from "./hooks/useSignInForm";
 import {TSignInForm} from "./types/SignInForm";
 
@@ -24,8 +24,8 @@ const LoginPage: React.FC = () => {
     };
 
     return (
-        <div className='app-container'>
-            <div className={styles.loginContainer}>
+        <div>
+            <div className={styles.container}>
                 <form className={styles.form} onSubmit={handleFormSubmit}>
                     <p className={styles.formTitle}>Zaloguj się na swoje konto</p>
                     <div className={styles.inputContainer}>

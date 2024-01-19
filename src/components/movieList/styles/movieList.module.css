@@ -1,5 +1,12 @@
 .movieList {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
+	min-height: 100vh;
+}
+
+.emptyList {
+	color: black;
+	text-align: center;
+	padding: 20px;
 }

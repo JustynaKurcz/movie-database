@@ -17,7 +17,7 @@
 }
 
 .searchBar::before {
-	content: '\1F50D'; 
+	content: '\1F50D';
 	font-size: 30px;
 	margin-right: 10px;
 }

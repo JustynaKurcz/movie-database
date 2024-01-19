@@ -30,7 +30,7 @@ const useNavigationLinks = (): TLink[] => {
 
     useEffect(() => {
         setNavigationLinks([
-            { link: '/', label: 'Home' },
+            { link: '/', label: 'Strona główna' },
             ...(isLoggedIn
                 ? [
                     { link: '/add', label: 'Dodaj film' },

@@ -1,13 +1,13 @@
 import React from 'react'
 import {Routes, Route, BrowserRouter} from 'react-router-dom'
-import HomePage from './pages/HomePage'
-import LoginPage from './pages/LoginPage/LoginPage'
-import RegisterPage from './pages/RegisterPage/RegisterPage'
+import HomePage from './pages/HomePage/HomePage'
+import LoginPage from './pages/Auth/LoginPage/LoginPage'
+import RegisterPage from './pages/Auth/RegisterPage/RegisterPage'
 import MovieDetailsPage from "./pages/MovieDetails/MovieDetailsPage";
 import AddMoviePage from "./pages/AddMovie/AddMoviePage";
+import NotFound from "./pages/NotFound/NotFound";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
 

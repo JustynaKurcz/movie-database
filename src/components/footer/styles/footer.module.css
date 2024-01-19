@@ -1,10 +1,12 @@
 footer {
-	background-color: #413f3f;
-	color: white;
+	background-color: #f2e9d0;
+	color: black;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: fixed;
+	font-weight: bold;
+	border: 1px solid black;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -13,4 +15,10 @@ footer {
 
 .footerText {
 	font-size: 18px;
+}
+
+.linkedin {
+	text-decoration: none;
+	color: black;
+	margin: 10px;
 }

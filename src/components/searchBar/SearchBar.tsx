@@ -1,12 +1,29 @@
-import React from 'react'
-import styles from './styles/searchBar.module.css'
+import React, { useState } from 'react';
+import styles from './styles/searchBar.module.css';
 
-function SearchBar() {
-	return (
-		<div className={styles.searchBar}>
-			<input type='text' placeholder='Wyszukaj...' />
-		</div>
-	)
+interface SearchBarProps {
+	onSearch: (searchTerm: string) => void;
 }
 
-export default SearchBar
+const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+	const [searchTerm, setSearchTerm] = useState('');
+
+	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+		const newSearchTerm = e.target.value;
+		setSearchTerm(newSearchTerm);
+		onSearch(newSearchTerm);
+	};
+
+	return (
+		<div className={styles.searchBar}>
+			<input
+				type='text'
+				placeholder='Wyszukaj...'
+				value={searchTerm}
+				onChange={handleChange}
+			/>
+		</div>
+	);
+};
+
+export default SearchBar;

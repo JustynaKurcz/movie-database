@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
-import styles from './RegisterPage.module.css'
 import useSignUpForm from "./hooks/useSignUpForm";
 import {TSignUpForm} from "./types/SignUpForm";
+import styles from '../shared/styles/auth.module.css';
 
 const RegisterPage: React.FC = () => {
     const {handleSubmit} = useSignUpForm();
@@ -26,8 +26,8 @@ const RegisterPage: React.FC = () => {
     }
 
     return (
-        <div className="app-container">
-            <div className={styles.loginContainer}>
+        <div>
+            <div className={styles.container}>
                 <form className={styles.form} onSubmit={handleFormSubmit}>
                     <p className={styles.formTitle}>Zarejestruj się</p>
                     <div className={styles.inputContainer}>

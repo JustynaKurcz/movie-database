@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import styles from './AddMoviePage.module.css';
+import styles from './styles/AddMoviePage.module.css';
 import {TAddMovie} from "./types/AddMovie";
 import useAddMovieForm from "./hooks/useAddMovieForm";
 const AddMoviePage: React.FC = () => {
@@ -7,6 +7,7 @@ const AddMoviePage: React.FC = () => {
     const [formData, setFormData] = useState<TAddMovie>({
         title: '',
         content: '',
+        rate: 0,
         image: ''
     });
 
@@ -38,6 +39,13 @@ const AddMoviePage: React.FC = () => {
                         placeholder='Content'
                         name='content'
                         value={formData.content}
+                        onChange={handleInputChange}
+                    ></input>
+                    <input
+                        type='text'
+                        placeholder='Rate'
+                        name='rate'
+                        value={formData.rate}
                         onChange={handleInputChange}
                     ></input>
                     <input

@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    height: 100vh;
 }
 
 .addMovieContainer {
@@ -11,7 +12,7 @@
     background-color: #f7edd5;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
     width: 100%;
 }
 
@@ -25,25 +26,23 @@
 input[type='text'] {
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
     font-size: 16px;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #4caf50;
+    background-color: #eaceb4;
     color: white;
-    border: none;
+    border: 1px solid black;
+    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #aed09e;
 }
 
-button:active {
-    background-color: #3e8e41;
-}

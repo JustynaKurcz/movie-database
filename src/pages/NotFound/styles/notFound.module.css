@@ -1,0 +1,24 @@
+.container {
+    background-color: #c7b198;
+    text-align: center;
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.title {
+    color: #f5f5dc;
+    font-size: 10.5em;
+}
+
+.text {
+    color: #f5f5dc;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.link {
+    color: #f5f5dc;
+    text-decoration: underline;
+    font-size: 1.2em;
+    margin-top: 20px;
+}

@@ -28,7 +28,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({movie}) => {
                 <p><strong>Ocena:</strong> {movie.rate}</p>
                 <p><strong>Opis:</strong> {movie.content}</p>
                 {isAdmin && (
-                    <button onClick={() => handleDeleteMovie(movie.id)}>Usuń film</button>
+                    <button className={styles.deleteButton} onClick={() => handleDeleteMovie(movie.id)}>Usuń film</button>
                 )}
             </div>
         </div>
